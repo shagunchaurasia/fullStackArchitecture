@@ -1,27 +1,28 @@
 // Imports
-import express from 'express'
+import express from "express";
+//Changed
 
 // App Imports
-import database from './setup/server/database'
-import middlewares from './setup/server/middlewares'
-import upload from './setup/server/upload'
-import endpoint from './setup/server/endpoint'
-import start from './setup/server/start'
+import database from "./setup/server/database";
+import middlewares from "./setup/server/middlewares";
+import upload from "./setup/server/upload";
+import endpoint from "./setup/server/endpoint";
+import start from "./setup/server/start";
 
 // Create express server
-const server = express()
+const server = express();
 
 // Connect database
-database()
+database();
 
 // Setup middlewares
-middlewares(server)
+middlewares(server);
 
 // Setup uploads
-upload(server)
+upload(server);
 
 // Setup endpoint
-endpoint(server)
+endpoint(server);
 
 // Start server
-start(server)
+start(server);
